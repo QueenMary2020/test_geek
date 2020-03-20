@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>formulaire dachat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="forms.css">
+
+  </head>
+    <body>
+      <div class="container">
+       <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark ">
+      <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+       <div class="col-auto">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="file:///C:/Users/hp/Desktop/MON%20ARTICLE/accueil.html" >Accueil<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#SENSIBILISATION">sensibilisation</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#TEMOIGNAGES">Temoignage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="file:///C:/Users/hp/Desktop/MON%20ARTICLE/otrearticles.html">Actualités</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactez-nous">contacts</a>
+            </li>
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+      </div>
+      </div>
+    </nav>
+    </div>
+
+
+    <div class="payment">
+
+      <h2>effectuer un Achat</h2>
+      <div class="form">
+
+          <label class="label">choississez votre article</label>
+          <select id="listearticle" class="input" name=""  onchange="prixU()" required >
+            <option value="0"></option>
+            <option value="1">montre 5G</option>
+            <option value="2">gaine</option>
+            <option value="3">telephone samsung</option>
+            <option value="4">pc apple</option>
+            <option value="5">tods</option>
+            <option value="6">pc hp</option>
+          </select>
+
+
+          <label class="label">prix unitaire</label>
+          <input type="text" class="input" id="prix" disabled="disabled">
+
+
+            <label class="label">nombre d'examplaire</label>
+            <input type="text" class="input" id="nbrexpl" onkeyup="prixU()" required>
+
+            <label class="label">total à payer </label>
+            <input type="text" class="input" disabled="disabled" id="totalapayer" >
+
+        </div>
+
+         <button type="submit" id="calculate" onclick="validation()">valider</button>
+         <button type="reset" id="">annuler</button>
+
+
+
+
+
+
+
+    <script src="forms.js"></script>
+      </body>
+    </html>

@@ -1,0 +1,25 @@
+.bg-dark{
+  background-color: #04204e !important;
+}
+.navbar-brand{
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 28px;
+}
+.navbar-dark .navbar-nav .nav-link{
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+
+}
+.nav-dark .navbar-nav .nav-item{
+  margin: 0 15px;
+}
+body{
+  background: white;
+
+}
+.don{
+  margin-top: 50px;
+  padding-top: 50px;
+}

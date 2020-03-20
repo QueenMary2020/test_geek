@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>calculatrice</title>
+    <link rel="stylesheet" href="calcul.css">
+  </head>
+  <body>
+
+    <div id="wrapper">
+        <div id="calculatrice">
+          <h2>calculer</h2>
+          <table>
+            <tr>
+              <td class="info"><label for="nbre1">Nombre1 :</label></td>
+              <td><input type="text" id="nbr1" ></td>
+            </tr>
+
+            <tr>
+              <td class="info"><label for="nbre2">Nombre2 :</label></td>
+              <td><input type="text" id="nbr2" ></td>
+            </tr>
+
+            <tr>
+              <td>
+                <select>
+
+                       <option id="add">Addition</option>
+                       <option id="sous">Soustration</option>
+                       <option id="multi">Multiplication</option>
+                       <option id="div">division</option>
+              </select>
+            </td>
+            <td> <button onclick="calcul()" value="calculer">calculer</button></td>
+            </tr>
+            <tr>
+              <td class="info"><label for="resultat">Resultat :</label></td>
+              <td><input type="text" name="result" id="result" disabled="disabled"></td>
+            </tr>
+          </table>
+             </div>
+         </div>
+
+<script src="calcul.js"></script>
+
+  </body>
+</html>

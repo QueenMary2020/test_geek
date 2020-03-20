@@ -1,0 +1,10 @@
+
+.login-purple-pink {
+    background: linear-gradient(145deg, #3F51B5, #E91E63);
+    
+    margin-left: 70%;
+}
+
+body {
+    font-size: 13px;
+}

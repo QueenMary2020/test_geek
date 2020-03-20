@@ -1,0 +1,33 @@
+.bg-dark{
+  background-color: #04204e !important;
+}
+.navbar-brand{
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 28px;
+}
+.navbar-dark .navbar-nav .nav-link{
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+
+}
+.nav-dark .navbar-nav .nav-item{
+  margin: 0 15px;
+}
+
+.blog-img {
+	position: relative;
+}
+.blog-img img {
+  margin-left: 50%;
+  padding-top: 100px;
+	width: 50%;
+  height: 50%;
+  text-align: center;
+}
+.blog-content {
+padding-top: 40px;
+margin-left: 30%;
+  text-align: center;
+}
